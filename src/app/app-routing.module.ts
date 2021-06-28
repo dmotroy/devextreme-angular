@@ -5,7 +5,17 @@ import { AuthGuardService } from './shared/services';
 import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { TasksComponent } from './pages/tasks/tasks.component';
-import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
+import {
+  DxSelectBoxModule, DxListModule, DxCheckBoxModule,
+  DxNumberBoxModule, DxFormModule, DxTextAreaModule,
+  DxDateBoxModule, DxButtonModule, DxTextBoxModule,
+  DxMultiViewModule, DxCalendarModule, DxTemplateModule,
+  DxLoadPanelModule, DxPopupModule, DxSwitchModule,
+  DxDataGridModule, DxBoxModule, DxRadioGroupModule,
+  DxScrollViewModule, DxGalleryModule, DxValidatorModule,
+  DxTooltipModule, DxSpeedDialActionModule, DxAccordionModule,
+  DxTabPanelModule
+} from 'devextreme-angular';
 
 const routes: Routes = [
   {
@@ -35,7 +45,15 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes), DxDataGridModule, DxFormModule],
+  imports: [RouterModule.forRoot(routes), DxSelectBoxModule, DxListModule, DxCheckBoxModule,
+    DxNumberBoxModule, DxFormModule, DxTextAreaModule,
+    DxDateBoxModule, DxButtonModule, DxTextBoxModule,
+    DxMultiViewModule, DxCalendarModule, DxTemplateModule,
+    DxLoadPanelModule, DxPopupModule, DxSwitchModule,
+    DxDataGridModule, DxBoxModule, DxRadioGroupModule,
+    DxScrollViewModule, DxGalleryModule, DxValidatorModule,
+    DxTooltipModule, DxSpeedDialActionModule, DxAccordionModule,
+    DxTabPanelModule],
   exports: [RouterModule],
   providers: [AuthGuardService],
   declarations: [HomeComponent, ProfileComponent, TasksComponent]

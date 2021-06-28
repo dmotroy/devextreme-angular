@@ -2,15 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import {
-  DxSelectBoxModule, DxListModule, DxCheckBoxModule,
-  DxNumberBoxModule, DxFormModule, DxTextAreaModule,
-  DxDateBoxModule, DxButtonModule, DxTextBoxModule,
-  DxMultiViewModule, DxCalendarModule, DxTemplateModule,
-  DxLoadPanelModule, DxPopupModule, DxSwitchModule,
-  DxDataGridModule, DxBoxModule, DxRadioGroupModule,
-  DxScrollViewModule, DxGalleryModule, DxValidatorModule,
-  DxTooltipModule, DxSpeedDialActionModule, DxAccordionModule,
-  DxTabPanelModule
+  DxDateBoxModule
 } from 'devextreme-angular';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -36,15 +28,7 @@ import { UnauthenticatedContentModule } from './unauthenticated-content';
     ChangePasswordFormModule,
     LoginFormModule,
     UnauthenticatedContentModule,
-    DxSelectBoxModule, DxListModule, DxCheckBoxModule,
-  DxNumberBoxModule, DxFormModule, DxTextAreaModule,
-  DxDateBoxModule, DxButtonModule, DxTextBoxModule,
-  DxMultiViewModule, DxCalendarModule, DxTemplateModule,
-  DxLoadPanelModule, DxPopupModule, DxSwitchModule,
-  DxDataGridModule, DxBoxModule, DxRadioGroupModule,
-  DxScrollViewModule, DxGalleryModule, DxValidatorModule,
-  DxTooltipModule, DxSpeedDialActionModule, DxAccordionModule,
-  DxTabPanelModule
+  DxDateBoxModule, 
   ],
   providers: [AuthService, ScreenService, AppInfoService],
   bootstrap: [AppComponent]
